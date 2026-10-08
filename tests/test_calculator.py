@@ -33,3 +33,4 @@ def test_divide_by_zero():
 
 def test_power():
     assert power(2,3)==8
+    assert power(3,2)==9
