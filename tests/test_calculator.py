@@ -2,7 +2,7 @@
 
 import pytest
 
-from app.calculator import add, divide, multiply, subtract
+from app.calculator import add, divide, multiply, subtract, power
 
 
 def test_add():
@@ -30,3 +30,6 @@ def test_divide():
 def test_divide_by_zero():
     with pytest.raises(ValueError, match="Cannot divide by zero"):
         divide(10, 0)
+
+def test_power():
+    assert power(2,3)==8
